@@ -150,7 +150,7 @@ input {
 }
 
 .phone-wrapper {
-  max-width: 280px;
+  max-width: 290px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -205,6 +205,12 @@ input {
 .bg-text {
   position: absolute;
   left: 0;
+}
+
+.pen {
+  position: absolute;
+  top: 180px;
+  left: 60px;
 }
 
 .pc {
