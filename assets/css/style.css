@@ -213,6 +213,10 @@ img {
   width: 270px;
 }
 
+.text-box {
+  image-rendering: -webkit-optimize-contrast;
+}
+
 .pen {
   position: absolute;
   top: 180px;
