@@ -246,7 +246,7 @@ img {
 .circle-inner {
   display: flex;
   justify-content: space-between;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   width: 100%;
   padding: 0 25px;
@@ -328,5 +328,16 @@ img {
 
   .blue-circle p {
     transform: translateY(-10px);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .top-vidual {
+    height: 700px;
+  }
+  .bg-text {
+    width: 300px;
+    left: auto;
+    right: 130px;
   }
 }
