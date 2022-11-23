@@ -69,6 +69,11 @@ input {
   font-size: var(--normal-font-size);
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 /* ///// MAIN CSS ///// */
 
 /* NAV MENU */
@@ -192,7 +197,7 @@ input {
 /* TOPVIDUAL */
 
 .top-vidual {
-  height: 620px;
+  height: 650px;
   /* background-image: url(../img/top-img.png); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,12 +210,14 @@ input {
 .bg-text {
   position: absolute;
   left: 0;
+  width: 270px;
 }
 
 .pen {
   position: absolute;
   top: 180px;
   left: 60px;
+  width: 170px;
 }
 
 .pc {
@@ -230,14 +237,20 @@ input {
 }
 
 .circles {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
   position: absolute;
   bottom: 120px;
   margin: 0 auto;
   width: 100%;
+}
+
+.circle-inner {
+  display: flex;
+  justify-content: space-between;
   max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 25px;
+  min-width: 290px;
 }
 
 .blue-circle {
@@ -246,9 +259,21 @@ input {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 3px solid var(--first-color);
+  border: 5px solid var(--first-color);
   font-size: 24px;
   color: #0092da;
+  background-color: #fff;
+}
+
+.rec {
+  position: relative;
+}
+
+.attachment {
+  position: absolute;
+  width: 65px;
+  top: -50px;
+  left: -30px;
 }
 
 .blue-circle.little {
@@ -260,7 +285,7 @@ input {
 }
 
 .blue-circle p {
-  transform: translateY(-5px);
+  transform: translateY(-9px);
 }
 
 .top-vidual .below-item {
@@ -270,4 +295,38 @@ input {
   padding: 15px;
   position: absolute;
   bottom: 0;
+}
+
+@media screen and (max-width: 350px) {
+  .top-vidual {
+    height: 580px;
+  }
+
+  .bg-text {
+    width: 220px;
+  }
+
+  .pen {
+    width: 150px;
+    top: 140px;
+    left: 30px;
+  }
+
+  .pc {
+    width: 150px;
+  }
+
+  .blue-circle {
+    width: 85px;
+    height: 85px;
+    font-size: 22px;
+  }
+
+  .blue-circle.little {
+    font-size: 18px;
+  }
+
+  .blue-circle p {
+    transform: translateY(-10px);
+  }
 }
