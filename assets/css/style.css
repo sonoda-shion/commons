@@ -9,6 +9,7 @@
   --title-color: #000000;
   --text-color: #555555;
   --bg-color: #eeeeee;
+  --bg-color-2: #005a86;
 }
 
 /* 
@@ -62,6 +63,10 @@ h3 {
   font-size: 20px;
   color: var(--first-color);
   font-family: "Outfit", sans-serif;
+}
+
+p {
+  line-height: 26px;
 }
 
 button,
@@ -233,6 +238,7 @@ img {
   text-align: center;
   font-family: none;
   font-weight: bold;
+  line-height: 40px;
 }
 
 .itaric {
@@ -400,6 +406,7 @@ img {
     text-align: center;
     font-family: none;
     font-weight: bold;
+    line-height: 45px;
   }
 
   .itaric {
@@ -509,11 +516,6 @@ section .title {
   text-align: center;
 }
 
-.intro-items .item .item-text {
-  font-weight: bold;
-  line-height: 26px;
-}
-
 /* SOLUTION */
 .solution {
   background: linear-gradient(to bottom left, #eeeeee 50%, #dae4e9 50.5%)
@@ -523,6 +525,7 @@ section .title {
 
 .solution-inner {
   width: 80%;
+  min-width: 290px;
   margin: 0 auto;
   z-index: 2;
   background-color: #fff;
@@ -559,6 +562,159 @@ section .title {
   margin-bottom: 30px;
 }
 
-.sol-items .item .text-content p {
-  line-height: 26px;
+/* CONTACT */
+.contact-inner {
+  border-radius: 20px;
+  border: 8px solid var(--first-color-second);
+  width: 80%;
+  min-width: 290px;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+/* a part of common css */
+.underline {
+  background: linear-gradient(transparent 80%, var(--first-color-second) 30%);
+}
+.click-btn {
+  width: 50px;
+}
+/* common ends */
+.contact-inner .click-btn {
+  margin: 40px auto 0 auto;
+}
+
+/* PLAN */
+.plan {
+  background-color: var(--bg-color-2);
+  color: #000000;
+  width: 100%;
+}
+
+.plan .title {
+  color: #fff;
+}
+
+.plan-title p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.plan .above-content {
+  display: grid;
+  gap: 60px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.plan .above-content .item {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  min-width: 290px;
+  padding: 30px 30px 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.plan .above-content .item .title {
+  border: 3px solid var(--first-color);
+  color: var(--first-color);
+  width: 150px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.plan .above-content .item p {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+.cost {
+  display: flex;
+  width: 100%;
+  min-width: 240px;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 30px;
+}
+
+.cost .circle {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: var(--first-color);
+  text-align: center;
+}
+
+.cost .circle p {
+  transform: translateY(18px);
+  color: #fff;
+}
+
+.plan .above-content .item .yen {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Outfit", sans-serif;
+  transform: translateY(15px);
+}
+.yen span {
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+
+.plan .above-content .item .text-items {
+  display: grid;
+  gap: 20px;
+}
+
+.plan .contact-btn {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 100px;
+  border: 1px solid var(--first-color);
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 15px;
+  transform: translateY(35px);
+}
+
+/* changes of color */
+.plan .above-content .item .title.navy {
+  border: 3px solid var(--bg-color-2);
+  color: var(--bg-color-2);
+}
+
+.cost .circle.navy {
+  background-color: var(--bg-color-2);
+}
+
+.plan .contact-btn.navy {
+  border: 1px solid var(--bg-color-2);
+  background-color: #004e74;
+}
+
+.plan .above-content .item .title.orange {
+  border: 3px solid var(--first-color-second);
+  color: var(--first-color-second);
+}
+
+.cost .circle.orange {
+  background-color: var(--first-color-second);
+}
+
+.plan .contact-btn.orange {
+  border: 1px solid var(--first-color-second);
+  background-color: var(--first-color-second);
 }
