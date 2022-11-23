@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Outfit&display=swap");
+/* 
+///// COLORS /////
+*/
+:root {
+  --body-color: #fff;
+  --first-color: #0092da;
+  --first-color-second: #ff792e;
+  --title-color: #000000;
+  --text-color: #555555;
+  --bg-color: #eeeeee;
+}
+
+/* 
+///// FONT WEIGHT /////
+*/
+:root {
+  --font-bold: bold;
+  --font-semi-bold: 500;
+}
+
+/* 
+///// TRANSITION /////
+*/
+:root {
+  --transition: all 0.3s linear;
+}
+/* 
+///// BASE /////
+*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  background-color: var(--body-font);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--font-semi-bold);
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--title-color);
+}
+
+h3 {
+  font-size: 20px;
+  color: var(--first-color);
+  font-family: "Outfit", sans-serif;
+}
+
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+/* ///// MAIN CSS ///// */
+
+/* NAV MENU */
+.nav-menu {
+  /* none */
+  display: none;
+  position: fixed;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  padding-top: 20px;
+}
+
+.menu-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.menu-header .logo {
+  width: 153px;
+  height: 40px;
+}
+
+.menu-header .Qbtn {
+  margin-right: 25px;
+}
+
+.Qbtn {
+  width: 40px;
+}
+
+.menu-inner {
+  width: 80%;
+  margin: 90px auto 0 auto;
+}
+
+.menu-lists {
+  display: grid;
+  gap: 40px;
+  font-size: 16px;
+  font-weight: var(--font-bold);
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.menu-inner .contact-btn {
+  font-size: 16px;
+  font-weight: var(--font-bold);
+  color: #fff;
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--first-color-second);
+  padding: 15px 0;
+  border-radius: 100px;
+}
+
+.menu-footer {
+  position: absolute;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  background-color: #ff792e;
+  padding: 15px;
+}
+
+.phone-wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.phone-text {
+  color: #fff;
+}
+
+.phone-text p {
+  font-size: 20px;
+  font-weight: var(--font-bold);
+}
+
+.phone-text p:nth-child(2) {
+  font-size: 35px;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  /* background-color: #22792e; */
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-inner .icons .Qbtn {
+  margin-right: 20px;
+}
+
+/* TOPVIDUAL */
+
+.top-vidual {
+  height: 620px;
+  /* background-image: url(../img/top-img.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+}
+.bg-text {
+  position: absolute;
+  left: 0;
+}
+
+.pc {
+  right: 0;
+}
+
+.triangle-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom left, #fff 50%, #dae4e9 50.5%) no-repeat
+    top left/100% 100%;
+  z-index: -1;
+}
+
+.top-circle {
+  display: none;
+}
+
+.circles {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 120px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.blue-circle {
+  white-space: pre-line;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--first-color);
+  font-size: 24px;
+  color: #0092da;
+}
+
+.blue-circle.little {
+  font-size: 20px;
+}
+
+.blue-circle.little p {
+  transform: translateY(3px);
+}
+
+.blue-circle p {
+  transform: translateY(-5px);
+}
+
+.top-vidual .below-item {
+  height: 90px;
+  width: 100%;
+  background-color: #ff792e;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+}
