@@ -15,14 +15,17 @@ $(function () {
 jQuery(function($) {
     var $win = $(window),
         $nav = $('.header'),
+        $contactBtn = $(".top-circle"),
         navPos = $nav.offset().top,
         fixedClass = 'fixed';
     $win.on('load scroll', function() {
       var value = $(this).scrollTop();
       if ( value > navPos + 80 ) {
         $nav.addClass(fixedClass);
+        $contactBtn.addClass(fixedClass);
       } else {
         $nav.removeClass(fixedClass);
+        $contactBtn.removeClass(fixedClass);
       }
     });
 });

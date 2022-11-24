@@ -163,7 +163,7 @@ img {
 
 .menu-inner {
   width: 80%;
-  margin: 40px auto 0 auto;
+  margin: 30px auto 0 auto;
 }
 
 .menu-lists {
@@ -233,8 +233,40 @@ img {
   align-items: center;
 }
 
+.header-inner .nav-lists {
+  display: none;
+}
+
 .header-inner .icons .Qbtn {
   margin-right: 20px;
+}
+
+@media screen and (min-width: 710px) {
+  .header {
+    height: 64px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-inner {
+    width: 100%;
+  }
+
+  .header-inner .nav-lists {
+    display: flex;
+    width: 80%;
+  }
+
+  .header-inner .nav-lists a {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .header-inner .icons {
+    display: none;
+  }
 }
 
 /* FOLLOWING HEADER */
@@ -476,6 +508,42 @@ img {
     width: 190px;
     top: 180px;
     left: 60px;
+  }
+}
+
+@media screen and (min-width: 710px) {
+  .top-circle {
+    display: block;
+    width: 116px;
+    height: 116px;
+    background-color: var(--first-color-second);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 11;
+  }
+
+  .top-circle.fixed {
+    position: fixed;
+  }
+  .top-circle p {
+    white-space: pre-line;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .top-circle p span {
+    font-size: 22px;
+  }
+
+  .top-circle .click-btn {
+    width: 20px;
   }
 }
 
