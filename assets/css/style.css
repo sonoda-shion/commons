@@ -764,7 +764,7 @@ section .title {
     font-size: 30px;
   }
 
-  p {
+  section p {
     font-size: 16px;
     line-height: 28px;
   }
@@ -1047,6 +1047,36 @@ section .title {
   margin: 40px auto 0 auto;
 }
 
+@media screen and (min-width: 710px) {
+  .underline {
+    background: none;
+    border-bottom: 5px solid var(--first-color-second);
+  }
+
+  .contact-inner {
+    width: 90%;
+    max-width: 1160px;
+  }
+
+  .contact-inner p {
+    text-align: center;
+    max-width: 684px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .contact-inner {
+    position: relative;
+  }
+  .contact-inner .click-btn {
+    margin: 0;
+    position: absolute;
+    right: 30px;
+    top: 110px;
+  }
+}
+
 /* PLAN */
 .plan {
   background-color: var(--bg-color-2);
@@ -1077,6 +1107,7 @@ section .title {
   background-color: #fff;
   border-radius: 20px;
   min-width: 290px;
+  max-width: 360px;
   padding: 30px 20px 10px 20px;
   display: flex;
   flex-direction: column;
@@ -1209,11 +1240,17 @@ section .title {
   background-color: #fff;
   border-radius: 20px;
   width: 100%;
-  padding: 30px 30px 10px 30px;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 30px 20px 10px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
+}
+
+.below-content .item .text-items-plan {
+  margin-top: 20px;
 }
 
 .below-content .inner-content .item .yen {
@@ -1225,11 +1262,15 @@ section .title {
   transform: translateY(15px);
 }
 
+.below-content .inner-content .item .yen {
+  margin-bottom: 0;
+}
+
 .below-content .item .title {
   border: 3px solid var(--first-color-second);
   color: var(--first-color-second);
   width: 210px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   font-size: 20px;
   padding: 5px 0;
 }
@@ -1238,6 +1279,137 @@ section .title {
   text-align: center;
   font-size: 16px;
   letter-spacing: 0.1rem;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 500px) {
+  .plan .above-content .item .title {
+    border: 5px solid var(--first-color);
+    color: var(--first-color);
+    width: 200px;
+    font-size: 30px;
+    padding: 10px 0;
+  }
+
+  .below-content .item .title {
+    border: 5px solid var(--first-color-second);
+    width: 300px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .plan .above-content .item .title.navy {
+    border: 5px solid var(--bg-color-2);
+  }
+
+  .plan .above-content .item .title.orange {
+    border: 5px solid var(--first-color-second);
+  }
+
+  .cost {
+    min-width: 260px;
+  }
+
+  .plan .above-content .item .yen {
+    font-size: 60px;
+  }
+
+  .below-content .inner-content .item .yen {
+    font-size: 60px;
+  }
+  .yen span {
+    font-size: 20px;
+  }
+
+  .item .text-items-plan {
+    font-size: 16px;
+  }
+
+  .plan .above-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 120px auto;
+  }
+
+  .above-content .item-wrapper {
+    margin: 0 auto;
+    width: 360px;
+  }
+
+  .plan .above-content .item {
+    width: 100%;
+  }
+
+  .plan .below-content .below-title {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 710px) {
+  .plan .below-content .below-title {
+    white-space: normal;
+    line-height: 50px;
+    font-size: 30px;
+  }
+
+  .below-content .inner-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .below-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .below-content .inner-content .item {
+    display: block;
+    max-width: 720px;
+    padding: 60px 20px;
+    position: relative;
+  }
+
+  .below-content .inner-content .item .title {
+    margin-bottom: 30px;
+    width: 404px;
+  }
+
+  .below-content .inner-content .item .flex-wrapper {
+    display: flex;
+  }
+
+  .below-content .cost {
+    border-bottom: none;
+  }
+
+  .below-content .item .item-left {
+    border-right: 1px solid #d9d9d9;
+    padding-right: 20px;
+    width: 47%;
+  }
+
+  .below-content .item .text-items-plan {
+    width: 47%;
+    padding-left: 20px;
+    margin-top: 0;
+  }
+
+  .below-content .inner-content .item .contact-btn {
+    position: absolute;
+    left: 215px;
+  }
+}
+
+@media screen and (min-width: 1330px) {
+  .below-content .inner-content .below-text {
+    max-width: 340px;
+    margin: 0 auto 30px auto;
+  }
 }
 
 /* CUSTOMERS */
