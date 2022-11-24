@@ -616,7 +616,7 @@ img {
 @media screen and (min-width: 1180px) {
   .top-vidual {
     height: 582px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     display: flex;
     justify-content: flex-end;
     overflow: visible;
@@ -750,6 +750,46 @@ section .title {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 710px) {
+  section {
+    padding: 80px 0;
+  }
+
+  section .title {
+    white-space: normal;
+    margin-bottom: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .h2-span {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .h2-span {
+    font-size: 55px;
+    letter-spacing: 0.4rem;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  section .title {
+    white-space: normal;
+    line-height: 30px;
+  }
+}
+
 /* INTRODUCTION */
 .introduction .title {
   position: relative;
@@ -823,6 +863,84 @@ section .title {
   text-align: center;
 }
 
+@media screen and (min-width: 710px) {
+  .introduction .title::before {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    top: -20px;
+    left: -70px;
+  }
+
+  .introduction .title::after {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    top: -20px;
+    right: -70px;
+  }
+
+  .dots::before {
+    width: 8px;
+    height: 8px;
+    top: -5px;
+    left: 13px;
+  }
+
+  .dots::after {
+    width: 8px;
+    height: 8px;
+    top: -5px;
+    right: 18px;
+  }
+
+  .intro-items .item {
+    width: 80%;
+    max-width: 650px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .introduction .title::before {
+    width: 80px;
+    height: 80px;
+    top: -20px;
+    left: -70px;
+  }
+
+  .introduction .title::after {
+    top: -20px;
+    right: -70px;
+  }
+
+  .dots::before {
+    top: -5px;
+    left: 25px;
+  }
+
+  .dots::after {
+    top: -5px;
+    right: 25px;
+  }
+
+  .intro-items .item {
+    width: 80%;
+    max-width: 650px;
+  }
+  .intro-items {
+    display: flex;
+    gap: 0px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .intro-items .item {
+    width: auto;
+    max-width: 350px;
+  }
+}
+
 /* SOLUTION */
 .solution {
   background: linear-gradient(to bottom left, #eeeeee 50%, #dae4e9 50.5%)
@@ -867,6 +985,45 @@ section .title {
 .sol-items .item .text-content h3 {
   line-height: 30px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 710px) {
+  .solution-inner {
+    max-width: 650px;
+  }
+
+  .sol-items .item .img .merit {
+    font-size: 20px;
+    width: 170px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .solution-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 70px;
+  }
+  .sol-items .item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sol-items .item .img {
+    width: 47%;
+    position: relative;
+  }
+
+  .sol-items .item .text-content {
+    width: 47%;
+  }
+
+  .sol-items .item .img .merit {
+    position: absolute;
+    top: 50px;
+    left: -3vw;
+  }
 }
 
 /* CONTACT */
