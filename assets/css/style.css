@@ -82,16 +82,28 @@ img {
 
 /* ///// MAIN CSS ///// */
 
+/* HAMBURGER */
+#js-btn,
+.cross {
+  cursor: pointer;
+}
+
+#js-nav.show {
+  right: 0;
+  display: block;
+}
+
 /* NAV MENU */
 .nav-menu {
   /* none */
-  display: none;
   position: fixed;
   z-index: 15;
   width: 100%;
   height: 100%;
   background-color: var(--bg-color);
   padding-top: 20px;
+  right: -100%;
+  transition: all 0.3s;
 }
 
 .menu-wrapper {
@@ -638,7 +650,7 @@ section .title {
 .cost {
   display: flex;
   width: 100%;
-  min-width: 250px;
+  min-width: 260px;
   margin: 0 auto;
   justify-content: space-between;
   border-bottom: 1px solid #d9d9d9;
