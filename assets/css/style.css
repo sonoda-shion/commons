@@ -1494,6 +1494,77 @@ section .title {
   cursor: pointer;
 }
 
+.pc-text {
+  display: none;
+}
+
+@media screen and (min-width: 1050px) {
+  .customers-v .item {
+    width: 90%;
+    max-width: 1200px;
+    padding: 70px 100px;
+    display: flex;
+    position: relative;
+  }
+
+  .customers-v .item.reverse {
+    flex-direction: row-reverse;
+    margin-right: auto;
+  }
+
+  .customers-v .item .voice {
+    font-size: 20px;
+    width: 190px;
+    transform: translate3d(0);
+    position: absolute;
+    top: 35px;
+    left: -48px;
+  }
+
+  .customers-v .item .voice.reverse {
+    top: 35px;
+    left: auto;
+    right: -95px;
+  }
+
+  .customers-v .item .img {
+    width: 45%;
+  }
+
+  .customers-v .item .item-text {
+    width: 50%;
+  }
+
+  .item .item-text .h3-items h3 {
+    width: 100%;
+    line-height: 40px;
+    font-size: 30px;
+  }
+
+  .customers-v {
+    gap: 60px;
+    align-items: flex-end;
+  }
+
+  .down-p {
+    display: block;
+    opacity: 1;
+  }
+
+  .click-arrow {
+    display: none;
+  }
+
+  .sp-text {
+    display: none;
+  }
+
+  .pc-text {
+    display: block;
+    white-space: pre-line;
+  }
+}
+
 /* FLOW */
 .flow {
   background: linear-gradient(to bottom left, #eeeeee 50%, #dae4e9 50.5%)
@@ -1565,6 +1636,63 @@ section .title {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1050px) {
+  .flow-inner {
+    width: 898px;
+    margin: 0 auto;
+  }
+  .flow-inner .texts {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .flow-inner .item-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flow-inner .item-text .num {
+    width: 200px;
+    height: 200px;
+    position: static;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+  }
+
+  .flow-inner .item-text .down-p {
+    width: 624px;
+  }
+
+  .num p {
+    font-size: 48px;
+  }
+
+  .num p.pc-text {
+    font-size: 24px;
+  }
+
+  .flow-inner .item-text.no-border::before {
+    content: none;
+  }
+
+  .flow-inner .texts .item-text p.pc-text {
+    margin-top: 15px;
+  }
+
+  .num p {
+    transform: translateY(10px);
+  }
+
+  .num.first p {
+    transform: translateY(25px);
+  }
+
+  .flow-inner .item-text::before {
+    left: 98px;
+  }
+}
+
 /* ABOUT */
 .about-inner {
   width: 80%;
@@ -1577,13 +1705,49 @@ section .title {
   margin: 0 auto 40px auto;
 }
 
-.about-inner .text-content p:nth-child(1) {
+.about-inner .text-content p {
   margin-bottom: 30px;
 }
 
-.about-inner .text-content p:nth-child(2),
-.about-inner .text-content p:nth-child(3) {
+.about-inner .text-content .names p {
   font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .about-inner .text-content .names p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .about-inner {
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-inner .img {
+    width: 300px;
+    margin: 0 auto 40px auto;
+    width: 45%;
+  }
+
+  .about-inner .text-content {
+    width: 45%;
+    max-width: 675px;
+    padding-top: 80px;
+  }
+
+  .about-inner .text-content .names {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .about-inner .text-content .names p:nth-child(1) {
+    margin-right: 30px;
+  }
 }
 
 /* FOOTER */
@@ -1645,5 +1809,60 @@ section .title {
 
   .footer-lists a {
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .footer p {
+    font-size: 16px;
+  }
+
+  .footer-contact .text {
+    max-width: 684px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .footer-content .footer-lists a {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 710px) {
+  .footer-content {
+    padding: 70px 0 40px 0;
+  }
+
+  .footer-lists {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    min-width: 519px;
+    margin: 0 auto;
+  }
+
+  .footer-lists .child2 {
+    order: 0;
+  }
+  .footer-lists .child4 {
+    order: 0;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .footer-contact {
+    position: relative;
+    padding: 70px 40px;
+  }
+
+  .footer-contact .contact-title {
+    margin-bottom: 70px;
+  }
+
+  .footer-contact .click-btn {
+    position: absolute;
+    right: 10vw;
+    top: 100px;
   }
 }

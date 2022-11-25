@@ -62,3 +62,5 @@ $(function() {
         $(".down-f-ff").toggleClass("active");
     });
 });
+
+// SCROLLREVEAL
