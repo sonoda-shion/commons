@@ -995,6 +995,10 @@ section .title {
   margin-bottom: 30px;
 }
 
+.sol-items .item .merit {
+  display: none;
+}
+
 @media screen and (min-width: 710px) {
   .solution-inner {
     max-width: 650px;
@@ -1016,6 +1020,7 @@ section .title {
   .sol-items .item {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
 
   .sol-items .item .img {
@@ -1031,6 +1036,24 @@ section .title {
     position: absolute;
     top: 50px;
     left: -3vw;
+    display: none;
+  }
+
+  .sol-items .item .merit {
+    display: block;
+    position: absolute;
+    color: var(--first-color);
+    background-color: #fff;
+    border-radius: 100px;
+    border: 5px solid var(--first-color);
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding: 10px 0;
+    font-size: 20px;
+    width: 170px;
+    top: 30px;
+    left: -40px;
+    z-index: 3;
   }
 }
 
