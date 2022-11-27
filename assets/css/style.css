@@ -785,7 +785,6 @@ section .title {
   }
 
   section .title {
-    white-space: normal;
     line-height: 30px;
   }
 }
