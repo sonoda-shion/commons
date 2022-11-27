@@ -78,9 +78,18 @@ input {
 img {
   width: 100%;
   display: block;
+  transition: all 0.3s;
 }
 
 /* ///// MAIN CSS ///// */
+/* SCALE */
+.img {
+  overflow: hidden;
+}
+
+.img:hover img {
+  transform: scale(1.1);
+}
 
 /* HAMBURGER */
 #js-btn,
@@ -1043,7 +1052,11 @@ section .title {
 }
 /* common ends */
 .contact-inner .click-btn {
-  margin: 40px auto 0 auto;
+  margin: 30px auto 0 auto;
+}
+
+.contact-inner .title {
+  line-height: 40px;
 }
 
 @media screen and (min-width: 710px) {

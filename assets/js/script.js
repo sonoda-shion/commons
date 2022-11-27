@@ -68,5 +68,4 @@ ScrollReveal().reveal('.scroll', {
     duration: 1000, 
     origin: 'top', 
     distance: '50px',
-    reset: true   
 });
