@@ -81,6 +81,10 @@ img {
   transition: all 0.3s;
 }
 
+.display.none {
+  display: none;
+}
+
 /* ///// MAIN CSS ///// */
 /* SCALE */
 .img {
@@ -129,10 +133,13 @@ img {
 /* NAV MENU */
 .nav-menu {
   /* none */
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   z-index: 15;
   width: 100%;
   height: 100%;
+  /* test */
+  min-height: 570px;
   background-color: var(--bg-color);
   padding-top: 20px;
   right: -100%;
@@ -275,6 +282,24 @@ img {
 
   .header-inner .icons {
     display: none;
+  }
+
+  .nav-lists a {
+    position: relative;
+  }
+
+  .nav-lists a li::before {
+    width: 0%;
+    height: 3px;
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    background-color: var(--first-color);
+    transition: all 0.4s;
+  }
+
+  .nav-lists a li:hover::before {
+    width: 100%;
   }
 }
 

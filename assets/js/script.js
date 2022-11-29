@@ -4,10 +4,12 @@ $(function () {
       $(".js-menu-btn").toggleClass("active");
       $("#js-nav").toggleClass("show");
       $('body').toggleClass('open');
+      $('.display').toggleClass('none');
     });
     $(".cross").on("click",function() {
         $("#js-nav").removeClass("show");
         $('body').removeClass('open');
+        $('.display').removeClass('none');
     })
 });
 
