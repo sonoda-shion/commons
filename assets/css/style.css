@@ -81,6 +81,12 @@ img {
   transition: all 0.3s;
 }
 
+@media screen and (min-width: 710px) {
+  br {
+    display: none;
+  }
+}
+
 .display.none {
   display: none;
 }
@@ -104,6 +110,7 @@ img {
 #js-nav.show {
   right: 0;
   display: block;
+  position: absolute;
 }
 
 /* DOWN MENU CSS */
@@ -130,11 +137,66 @@ img {
   transform: rotate(180deg);
 }
 
+/* PHONE STICKY */
+.phone-sticky {
+  position: fixed;
+  bottom: -130px;
+  left: 40px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: var(--first-color-second);
+  transition: all 0.3s;
+  z-index: 99;
+}
+
+.phone-sticky:hover {
+  animation-name: phoneRinging;
+  animation-duration: 0.3s;
+}
+
+@keyframes phoneRinging {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.phone-sticky.active {
+  bottom: 30px;
+}
+
+.phone-sticky img {
+  width: 60%;
+  transform: translate3d(15px, 18px, 0);
+}
+
+@media screen and (max-width: 500px) {
+  .phone-sticky {
+    width: 50px;
+    height: 50px;
+    left: 20px;
+  }
+
+  .phone-sticky img {
+    width: 60%;
+    transform: translate3d(10px, 10px, 0);
+  }
+
+  .phone-sticky.active {
+    bottom: 20px;
+  }
+}
+
 /* NAV MENU */
 .nav-menu {
   /* none */
-  /* position: fixed; */
-  position: absolute;
+  position: fixed;
   z-index: 15;
   width: 100%;
   height: 100%;
@@ -218,6 +280,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.phone {
+  transform: translateY(2px);
 }
 
 .phone-text {
@@ -402,18 +468,6 @@ img {
 .pc {
   right: 0;
 }
-
-/* .triangle-bg {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-      to bottom left,
-      var(--bg-color) 50%,
-      #dae4e9 50.5%
-    )
-    no-repeat top left/100% 100%;
-  z-index: -1;
-} */
 
 .top-circle {
   display: none;
@@ -779,7 +833,6 @@ section {
 
 section .title {
   text-align: center;
-  white-space: pre-line;
   line-height: 30px;
   margin-bottom: 30px;
 }
@@ -1089,7 +1142,7 @@ section .title {
   width: 80%;
   min-width: 290px;
   margin: 0 auto;
-  padding: 60px 30px;
+  padding: 40px 20px;
 }
 /* a part of common css */
 .underline {
@@ -1100,11 +1153,12 @@ section .title {
 }
 /* common ends */
 .contact-inner .click-btn {
-  margin: 30px auto 0 auto;
+  margin: 15px auto 0 auto;
 }
 
 .contact-inner .title {
-  line-height: 40px;
+  line-height: 35px;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 710px) {
@@ -1123,12 +1177,22 @@ section .title {
     max-width: 684px;
     margin: 0 auto;
   }
+
+  .contact-inner .title {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 1050px) {
   .contact-inner {
     position: relative;
+    padding: 65px 30px;
   }
+
+  .contact-inner .title {
+    margin-bottom: 50px;
+  }
+
   .contact-inner .click-btn {
     margin: 0;
     position: absolute;
@@ -1151,7 +1215,8 @@ section .title {
 .plan-title p {
   color: #fff;
   text-align: center;
-  margin-bottom: 30px;
+  width: 250px;
+  margin: 0 auto 30px auto;
 }
 
 .plan .above-content {
@@ -1418,6 +1483,10 @@ section .title {
   .below-content .inner-content {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .plan-title p {
+    width: 100%;
   }
 }
 

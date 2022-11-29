@@ -1,9 +1,7 @@
 // HAMBURGER
 $(function () {
     $("#js-btn").on("click", function () {
-      $(".js-menu-btn").toggleClass("active");
       $("#js-nav").toggleClass("show");
-      $('body').toggleClass('open');
       $('.display').toggleClass('none');
     });
     $(".cross").on("click",function() {
@@ -31,6 +29,23 @@ jQuery(function($) {
       }
     });
 });
+
+// PHONE STICKY
+$(function($) {
+  let $win = $(window),
+      $phone = $('.phone-sticky'),
+      $top = $('.top-vidual'),
+      topPos = $top.offset().top,
+      active = 'active';
+  $win.on('load scroll', function() {
+    let value = $(this).scrollTop();
+    if(value > topPos + 100) {
+      $phone.addClass(active);
+    } else {
+      $phone.removeClass(active);
+    }
+  })
+})
   
 
 // downMenu
