@@ -81,7 +81,8 @@ $(function() {
 	$('a[href^="#"]').click(function(){
 		if(windowWidth <= pcWidth) {
 			$("#js-nav").removeClass("show");
-	  		$('body').removeClass('open');
+	  	$('body').removeClass('open');
+      $('.display').removeClass('none');
 		}
     // 移動先を50px上にずらす
     var adjust = 110;
