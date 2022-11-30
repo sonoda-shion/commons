@@ -1133,6 +1133,10 @@ section .title {
     left: -40px;
     z-index: 3;
   }
+
+  .sol-items .item .merit.none {
+    display: block;
+  }
 }
 
 /* CONTACT */
