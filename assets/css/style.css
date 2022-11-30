@@ -1073,7 +1073,7 @@ section .title {
   margin-bottom: 30px;
 }
 
-.sol-items .item .merit {
+.sol-items .item .merit.none {
   display: none;
 }
 
